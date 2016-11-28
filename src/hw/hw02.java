@@ -19,6 +19,7 @@ for(int i=0;i<=n;i++){
 	sum=sum+i;
 	System.out.print(sum+" ");
 }
+System.out.println();//¤À³Î
 for(int i=1;i<=n;i++){
 	for(int j=1;j<i+1;j++){
 		System.out.print(i);}
