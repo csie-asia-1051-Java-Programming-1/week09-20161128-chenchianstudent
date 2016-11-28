@@ -16,21 +16,23 @@ int n=scn.nextInt();
 fun1(n);
 	}
 public static void fun1(int n){
-for(int y=2;y<n/2;y++){ 
-for(int x=1;x<y;x++){ 
-int sum=(y+x)*(y-x+1)/2; 
-	 if(sum==n){ 
-	String result="z="; 
-for(int a=x;a<=y;a++){ 
-result+=a; 
-result+="+"; 
+for(int i=2;i<n;i++){ 
+for(int j=1;j<=i;j++){ 
+int sum=((i+j)*(i-j+1))/2; 
+if(sum==n){ 
+String s="z="; 
+for(int a=j;a<=i;a++){ 
+s+=a; 
+s+="+";
+
  }
+System.out.println(s);
 		    
- if(result.length()>0){ 
- System.out.println(result.substring(0, result.length()-1)); 
+ 
 		    } 
 		    
 		    }
 		    }
 	  }
-}}
+
+}
