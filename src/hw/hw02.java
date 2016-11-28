@@ -1,15 +1,28 @@
 package hw;
+import java.util.Scanner;
 /*
- * Topic: è¼¸å…¥ä¸€å€‹æ­£æ•´æ•¸ Nï¼Œåˆ—èˆ‰å¦‚ä¸‹æ•¸åˆ—ï¼Œç›´åˆ°æ•¸å­—è¶…é N ç‚ºæ­¢ã€‚
-æ•¸åˆ—ä¸€:1 2 4 7 11 16 22 29â€¦
-æ•¸åˆ—äºŒ:1 2 2 3 3 3 4 4 4 4 5 5 5 5 5...
+ * Topic: ¿é¤J¤@­Ó¥¿¾ã¼Æ N¡A¦CÁ|¦p¤U¼Æ¦C¡Aª½¨ì¼Æ¦r¶W¹L N ¬°¤î¡C
+¼Æ¦C¤@:1 2 4 7 11 16 22 29¡K
+¼Æ¦C¤G:1 2 2 3 3 3 4 4 4 4 5 5 5 5 5...
  * Date: 2016/11/28
- * Author: 1050210XX å‘¨æ°¸æŒ¯è€å¸«
+ * Author: 105021007 ³¯ÄQ¦w
  */
 public class hw02 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+Scanner scn=new Scanner(System.in);
+System.out.print("½Ğ¿é¤Jn");
+int n=scn.nextInt();
+int sum=1;
+for(int i=0;i<=n;i++){
+	sum=sum+i;
+	System.out.print(sum+" ");
+}
+for(int i=1;i<=n;i++){
+	for(int j=1;j<i+1;j++){
+		System.out.print(i);}
+	}
 
 	}
 

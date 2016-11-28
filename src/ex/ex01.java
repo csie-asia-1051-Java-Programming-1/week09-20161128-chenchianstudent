@@ -26,7 +26,6 @@ public class ex01 {
 				data[i]=rnd.nextInt(42)+1;
 			}
 		}
-			
 		}
 		for(int i=0;i<data.length;i++){
 			System.out.print(data[i]+" ");

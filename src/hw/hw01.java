@@ -1,15 +1,36 @@
 package hw;
+import java.util.Scanner;
 /*
- * Topic: è®“ä½¿ç”¨è€…è¼¸å…¥ä¸€æ­£æ•´æ•¸ï¼Œåˆ©ç”¨å‡½å¼å‘¼å«æ‰¾å‡ºä¸€é€£çºŒæ•´æ•¸æ•¸åˆ—è®“è©²æ•¸åˆ—çš„å’Œç‚ºæ­¤ä¸€æ­£æ•´æ•¸ï¼Œæœ‰äº›æ­£æ•´æ•¸ä¸¦ä¸èƒ½æ‰¾å‡ºé€£çºŒæ•´æ•¸ï¼Œè‹¥æ‰¾ä¸åˆ°æ™‚ï¼Œè«‹å°å‡ºã€ŒNoã€ã€‚
- ä¾‹å¦‚: 15 =1+2+3+4+5 =4+5+6=7+8
+ * Topic:Åı¨Ï¥ÎªÌ¿é¤J¤@¥¿¾ã¼Æ¡A§Q¥Î¨ç¦¡©I¥s§ä¥X¤@³sÄò¾ã¼Æ¼Æ¦CÅı¸Ó¼Æ¦Cªº©M¬°¦¹¤@¥¿¾ã¼Æ¡A¦³¨Ç¥¿¾ã¼Æ¨Ã¤£¯à§ä¥X³sÄò¾ã¼Æ¡A­Y§ä¤£¨ì®É¡A½Ğ¦L¥X¡uNo¡v¡C
+¨Ò¦p: 15 =1+2+3+4+5 =4+5+6=7+8
  * Date: 2016/11/28
- * Author: 1050210XX å‘¨æ°¸æŒ¯è€å¸«
+ * Author: 105021007 ³¯ÄQ¦w
  */
 public class hw01 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-
+Scanner scn=new Scanner(System.in);
+System.out.print("½Ğ¿é¤J¤W­­");
+int n=scn.nextInt();
+fun1(n);
 	}
-
-}
+public static void fun1(int n){
+for(int y=2;y<n/2;y++){ 
+for(int x=1;x<y;x++){ 
+int sum=(y+x)*(y-x+1)/2; 
+	 if(sum==n){ 
+	String result="z="; 
+for(int a=x;a<=y;a++){ 
+result+=a; 
+result+="+"; 
+ }
+		    
+ if(result.length()>0){ 
+ System.out.println(result.substring(0, result.length()-1)); 
+		    } 
+		    
+		    }
+		    }
+	  }
+}}
