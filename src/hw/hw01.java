@@ -16,17 +16,20 @@ int n=scn.nextInt();
 fun1(n);
 	}
 public static void fun1(int n){
+System.out.print(n);
 for(int i=2;i<n;i++){ 
 for(int j=1;j<=i;j++){ 
 int sum=((i+j)*(i-j+1))/2; 
+
 if(sum==n){ 
-String s="z="; 
+String s="="; 
 for(int a=j;a<=i;a++){ 
-s+=a; 
-s+="+";
+	s+="+";
+	s+=a; 
+
 
  }
-System.out.println(s);
+System.out.print(s);
 		    
  
 		    } 
